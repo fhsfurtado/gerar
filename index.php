@@ -14,7 +14,7 @@
         <div id="content">
             teste
             <div class="fixed-action-btn">
-                <a class="btn-floating btn-large red">
+                <a class="btn-floating btn-large alt-color">
                     <i class="large material-icons">mode_edit</i>
                 </a>
                 <ul>

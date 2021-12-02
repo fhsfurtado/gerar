@@ -24,3 +24,11 @@ footer > label{
     right: 15px!important;
     bottom: 55px!important;
 }
+.main-color{
+    background-color: #2196F3!important;
+    color: white!important;
+}
+.alt-color{
+    background-color: #ff3399!important;
+    color: white!important;
+}

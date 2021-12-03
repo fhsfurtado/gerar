@@ -13,6 +13,7 @@
         <!-- É aqui onde a magia inicia-->
         <div id="content">
             teste
+            <!-- Actions Button
             <div class="fixed-action-btn">
                 <a class="btn-floating btn-large alt-color">
                     <i class="large material-icons">mode_edit</i>
@@ -23,7 +24,7 @@
                     <li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
                     <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
                 </ul>
-            </div>
+            </div> -->
         </div>
         <!-- É aqui onde a magia termina-->
         <!-- Inicio Rodapé -->

@@ -1,5 +1,6 @@
 <head>
     <!--Import Google Icon Font-->
+        <link rel="shortcut icon" href="<?=$icon_main?>" type="image/ico" />
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <script type="text/javascript" src="<?=$jquery?>"></script>
         <!--Import materialize.css-->

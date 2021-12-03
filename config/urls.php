@@ -12,6 +12,8 @@ $index          = "{$base_url}/";
 $app            = "{$base_url}/app";
 $estrutura      = "{$app}/estrutura";
 $view           = "{$app}/view";
+//ícones
+$icon_main      = "{$base_url}/pics/logo-main.png";
 
 // Constants
 

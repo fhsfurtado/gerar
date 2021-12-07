@@ -1,6 +1,6 @@
 <?php
 
-    function getMonthName($month){
+    function getMonthName($month,$year){
         switch ($month) {
             case "1":    $mes = 'Janeiro';     break;
             case "2":    $mes = 'Fevereiro';   break;
@@ -15,7 +15,7 @@
             case "11":    $mes = 'Novembro';    break;
             case "12":    $mes = 'Dezembro';    break; 
         }
-        return $mes;
+        return $mes.' / '.$year;
     }
     if(isset($_POST)){
         if(@$_POST['mes']!=''){
@@ -77,5 +77,5 @@
                     </div>
                 </div>';
     }
-    echo json_encode(["month" => getMonthName($mes) , "card" => $card]);
+    echo json_encode(["month" => getMonthName($mes,$ano) , "card" => $card]);
 ?>

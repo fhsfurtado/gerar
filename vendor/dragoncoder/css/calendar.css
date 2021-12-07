@@ -1,0 +1,97 @@
+@media (max-width: 949px) {
+    #calendar{
+        width: 95%;
+        margin-left: 2.5%;
+        align-self: center;
+    }
+    .day-head{
+        height: 25px;
+        border-bottom: black 1px dotted;
+        font-size: 8px;
+    }
+    .day-body{
+        height: 65px;
+    }
+    .day-name{
+        width: 14.28%;
+    }
+    .day{
+        border: #b3b4b5 1px solid;
+        width: 14.28%;
+        height: 90px;
+        float: left;
+        border-radius: 6px;
+    }
+    .day:hover{
+        background-color: #d94c4c !important;
+    }
+    #table_calendar{
+        width:95%;
+        margin-left: 2.5%;
+        align-self: center;
+        margin-top: 20px;
+        margin-bottom: 25px;
+    }
+    #tr-prev{
+        position: absolute;
+        left: 2.6%;
+    }
+    #tr-next{
+        position: absolute;
+        right: 2.6%;
+    }
+    #weekdays{
+        width:100%;
+        align-self: center;
+        border-top: gray 1px solid;
+    }
+}
+@media (min-width: 950px) {
+    #calendar{
+        width:80%;
+        margin-left: 10%;
+        align-self: center;
+    }
+    .day-head{
+        height: 25px;
+        border-bottom: black 1px dotted;
+    }
+    .day-body{
+        height: 65px;
+    }
+    .day{
+        border: #b3b4b5 1px solid;
+        width: 14.28%;
+        height: 90px;
+        float: left;
+        border-radius: 6px;
+    }
+    .day-name{
+        width: 14.28%;
+        font-size: 12px;
+    }
+    .day:hover{
+        background-color: #d94c4c !important;
+    }
+    #month-name{
+        font-size: 32px;
+    }
+    #table_calendar{
+        width:80%;
+        margin-left: 10%;
+        align-self: center;
+    }
+    #tr-prev{
+        position: absolute;
+        left: 10.1%;
+    }
+    #tr-next{
+        position: absolute;
+        right: 10.1%;
+    }
+    #weekdays{
+        width:100%;
+        align-self: center;
+        border-top: gray 1px solid;
+    }
+}

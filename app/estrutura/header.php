@@ -6,6 +6,14 @@
         <!--Import materialize.css-->
         <link type="text/css" rel="stylesheet" href="<?=$materializecss?>"  media="screen,projection"/>
         <link type="text/css" rel="stylesheet" href="<?=$stdcss?>"/>
+        <?php
+            if(isset($_GET['page'])){
+                if($_GET['page']=='agenda'){
+                    $fullcalendarjs = "{$base_url}/vendor/fullcalendar/lib/main.min.js";
+                    echo '<link type="text/css" rel="stylesheet" href="'.$calendarcss.'"/>';
+                }
+            }
+        ?>
 
         <!--Let browser know website is optimized for mobile-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>

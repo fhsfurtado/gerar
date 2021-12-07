@@ -12,7 +12,18 @@
         <!-- Fim Menu de Navegação -->
         <!-- É aqui onde a magia inicia-->
         <div id="content">
-            teste
+
+            <?php
+                //importar página com conteudo
+                if(isset($_GET['page'])){
+                    $arq = 'app/view/'.$_GET['page'].'.php';
+                    if(file_exists($arq)){
+                        require_once 'app/view/'.$_GET['page'].'.php';
+                    } else{
+                        echo "Ops! A página ".$arq." não existe!";
+                    }
+                }
+            ?>
             <!-- Actions Button
             <div class="fixed-action-btn">
                 <a class="btn-floating btn-large alt-color">
@@ -33,5 +44,13 @@
         <!--JavaScript at end of body for optimized loading-->
         <script type="text/javascript" src="<?=$materializejs?>"></script>
         <script type="text/javascript" src="<?=$stdjs?>"></script>
+        <?php
+            if(isset($_GET['page'])){
+                $arq = 'vendor/dragoncoder/js/'.$_GET['page'].'.js';
+                if(file_exists($arq)){
+                    echo '<script type="text/javascript" src="vendor/dragoncoder/js/'.$_GET['page'].'.js"></script>';
+                }
+            }
+        ?>
     </body>
 </html>

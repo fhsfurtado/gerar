@@ -20,11 +20,13 @@ $icon_main      = "{$base_url}/pics/logo-main.png";
 //CSS
 $stdcss         = "{$base_url}/vendor/dragoncoder/css/style.css";
 $materializecss = "{$base_url}/vendor/materialize/css/materialize.min.css";
+$calendarcss = "{$base_url}/vendor/dragoncoder/css/calendar.css";
 
 // JS
 $stdjs          = "{$base_url}/vendor/dragoncoder/js/script.js";
 $materializejs  = "{$base_url}/vendor/materialize/js/materialize.min.js";
 $jquery         = "{$base_url}/vendor/jquery/jquery.min.js";
+$calendarjs = "{$base_url}/vendor/dragoncoder/js/calendar.js";
 
 function redirect($url){
     if( headers_sent() ) {

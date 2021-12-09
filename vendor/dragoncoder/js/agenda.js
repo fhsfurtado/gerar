@@ -1,19 +1,4 @@
 $(document).ready(function() {
-    var capData = new Date();
-    
-    var ano = capData.getFullYear();
-    var mes = capData.getMonth()+1;
-    var dia = capData.getDate();
-    if(dia<10){
-        dia = '0'+dia;
-    }
-    var hoje = ano+'-'+mes+'-'+dia;
-    console.log(hoje);
-    $('div[id*=day]').each(function(){
-        if($(this).attr('call')==hoje){
-            $(this).attr('style','border: #ff3399 3px solid!important;')
-        }
-    })
     $.ajax({
         method: "POST",
         url: 'app/resources/calendarBuild.php',
@@ -27,18 +12,21 @@ $(document).ready(function() {
             console.log(resposta);
             $('#calendario-draw').html('Ocorreu uma falha na requisição');
         }
-
     });
 });
-$('div[id*=day]').on('click', function(){
-    alert('Você clicou na data '+$(this).attr('call'));
-})
-
 function voltaMes(){
+    var month = $('#mes_view').val();
+    var year  = $('#ano_view').val();
+    if(month==1){
+        month=12;
+        year--;
+    } else{
+        month--;
+    }
     $.ajax({
         method: "POST",
         url: 'app/resources/calendarBuild.php',
-        data: {mes: $('#mes_view').val(), ano: $('#ano_view').val(), act: '-'},
+        data: {mes: month, ano: year},
         dataType: 'json',
         success: function(resposta){
             $('#calendario-draw').html(resposta.card);
@@ -48,14 +36,23 @@ function voltaMes(){
             console.log(resposta);
             $('#calendario-draw').html('Ocorreu uma falha na requisição');
         }
-
     });
+    $('#mes_view').val(month);
+    $('#ano_view').val(year);
 }
 function avancaMes(){
+    var month = $('#mes_view').val();
+    var year  = $('#ano_view').val();
+    if(month==12){
+        month=1;
+        year++;
+    } else{
+        month++;
+    }
     $.ajax({
         method: "POST",
         url: 'app/resources/calendarBuild.php',
-        data: {mes: $('#mes_view').val(), ano: $('#ano_view').val(), act: '+'},
+        data: {mes: month, ano: year},
         dataType: 'json',
         success: function(resposta){
             $('#calendario-draw').html(resposta.card);
@@ -65,6 +62,7 @@ function avancaMes(){
             console.log(resposta);
             $('#calendario-draw').html('Ocorreu uma falha na requisição');
         }
-
     });
+    $('#mes_view').val(month);
+    $('#ano_view').val(year);
 }

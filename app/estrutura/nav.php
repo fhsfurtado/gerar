@@ -1,4 +1,4 @@
-<nav class="main-color">
+<nav class="main-color" style="position:fixed;top:0px;">
     <div class="nav-wrapper">
         &nbsp;<a href="#!" class="brand-logo">Logo</a>
         <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
@@ -11,7 +11,7 @@
         </ul>
     </div>
 </nav>
-<ul class="sidenav" id="mobile-demo">
+<ul class="sidenav" id="mobile-demo" style="position:fixed;top:0px;">
     <li><a href="?page=agenda">Agenda</a></li>
     <li><a href="?page=pacientes">Pacientes</a></li>
     <li><a href="?page=medicamentos">Medicamentos</a></li>

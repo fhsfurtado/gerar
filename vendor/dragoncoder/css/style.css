@@ -16,10 +16,13 @@ footer > label{
 /* Por ID*/
 #content{
     z-index: 0;
-    margin-top: 0px;
+    margin-top: 4.7%;
     margin-bottom: 40px;
     margin-left: 7px;
     margin-right: 7px;
+}
+#content > *{
+    z-index: -1;
 }
 /* Por classe*/
 .fixed-action-btn {
@@ -29,6 +32,12 @@ footer > label{
 .main-color{
     background-color: #2196F3!important;
     color: white!important;
+}
+.modal-content{
+    border-radius: 0px!important;
+    box-shadow:0px 0px 10px gray inset;
+    padding:10px;
+    margin:20px;
 }
 .alt-color{
     background-color: #ff3399!important;

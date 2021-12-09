@@ -5,6 +5,7 @@
         <script type="text/javascript" src="<?=$jquery?>"></script>
         <!--Import materialize.css-->
         <link type="text/css" rel="stylesheet" href="<?=$materializecss?>"  media="screen,projection"/>
+        <link type="text/css" rel="stylesheet" href="<?=$bootstrapcss?>"  media="screen,projection"/>
         <link type="text/css" rel="stylesheet" href="<?=$stdcss?>"/>
         <?php
             if(isset($_GET['page'])){

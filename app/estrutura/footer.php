@@ -3,6 +3,8 @@
         <script type="text/javascript" src="<?=$materializejs?>"></script>
         <script type="text/javascript" src="<?=$bootstrapjs?>"></script>
         <script type="text/javascript" src="<?=$stdjs?>"></script>
+        <script type="text/javascript" src="<?=$fa_js?>"></script>
+        <script type="text/javascript" src="<?=$dragonList?>"></script>
         <?php
             if(isset($_GET['page'])){
                 $arq = 'vendor/dragoncoder/js/'.$_GET['page'].'.js';

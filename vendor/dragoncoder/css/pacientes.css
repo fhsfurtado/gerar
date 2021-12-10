@@ -1,0 +1,21 @@
+#paciente_div{
+    margin-top: 7%;
+    margin-left: 14px;
+    margin-right: 14px;
+    margin-bottom: 60px;
+}
+@media(max-width:850px){
+    #paciente_div{
+        margin-top: 15%;
+        margin-left: 14px;
+        margin-right: 14px;
+        margin-bottom: 60px;
+    }
+}
+#search{
+    width: 350px;
+}
+.direita{
+    width: 350px;
+    float: right !important;
+}

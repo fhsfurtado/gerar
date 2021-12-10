@@ -1,4 +1,8 @@
 /* Por tag*/
+input:focus{
+    border-bottom: #2196F3!important;
+    box-shadow: 0 2px 0 0 #2196F3!important;
+}
 footer{
     position: fixed;
     width: 100%;
@@ -13,11 +17,17 @@ footer > label{
     color: white;
     align-items: center;
 }
+nav{
+    z-index: 1;
+}
 /* Por ID*/
+#btn-exit_lg{
+    vertical-align: middle!important;
+}
 #content{
-    z-index: 0;
+    z-index: -1;
     margin-top: 4.7%;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
     margin-left: 7px;
     margin-right: 7px;
 }
@@ -25,6 +35,17 @@ footer > label{
     z-index: -1;
 }
 /* Por classe*/
+.brand-logo{
+    margin-left: 21px;
+}
+.nav-clickable{
+    cursor: pointer;
+    width: 120px;
+    text-align: center;
+}
+.nav-clickable:hover{
+    background-color: rgba(0,0,0,0.1);
+}
 .fixed-action-btn {
     right: 15px!important;
     bottom: 55px!important;

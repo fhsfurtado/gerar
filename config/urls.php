@@ -22,13 +22,16 @@ $stdcss         = "{$base_url}/vendor/dragoncoder/css/style.css";
 $materializecss = "{$base_url}/vendor/materialize/css/materialize.min.css";
 $calendarcss    = "{$base_url}/vendor/dragoncoder/css/calendar.css";
 $bootstrapcss   = "{$base_url}/vendor/bootstrap/css/bootstrap.min.css";
+$fa_css         = "{$base_url}/vendor/fontawesome/css/all.min.css";
 
 // JS
 $stdjs          = "{$base_url}/vendor/dragoncoder/js/script.js";
 $materializejs  = "{$base_url}/vendor/materialize/js/materialize.min.js";
 $jquery         = "{$base_url}/vendor/jquery/jquery.min.js";
-$calendarjs = "{$base_url}/vendor/dragoncoder/js/calendar.js";
-$bootstrapjs   = "{$base_url}/vendor/bootstrap/js/bootstrap.min.js";
+$calendarjs     = "{$base_url}/vendor/dragoncoder/js/calendar.js";
+$bootstrapjs    = "{$base_url}/vendor/bootstrap/js/bootstrap.min.js";
+$fa_js          = "{$base_url}/vendor/fontawesome/js/all.min.js";
+$dragonList     = "{$base_url}/vendor/hackerList/list.js";
 
 function redirect($url){
     if( headers_sent() ) {

@@ -7,6 +7,7 @@
         <link type="text/css" rel="stylesheet" href="<?=$materializecss?>"  media="screen,projection"/>
         <link type="text/css" rel="stylesheet" href="<?=$bootstrapcss?>"  media="screen,projection"/>
         <link type="text/css" rel="stylesheet" href="<?=$stdcss?>"/>
+        <link type="text/css" rel="stylesheet" href="<?=$fa_css?>"/>
         <?php
             if(isset($_GET['page'])){
                 if($_GET['page']=='agenda'){

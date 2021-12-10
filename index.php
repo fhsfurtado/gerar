@@ -12,7 +12,6 @@
         <!-- Fim Menu de Navegação -->
         <!-- É aqui onde a magia inicia-->
         <div id="content">
-
             <?php
                 //importar página com conteudo
                 if(isset($_GET['page'])){
@@ -22,6 +21,10 @@
                     } else{
                         echo "Ops! A página ".$arq." não existe!";
                     }
+                } else{
+            ?>
+                Teste
+            <?php
                 }
             ?>
             <!-- Actions Button

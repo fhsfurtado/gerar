@@ -1,3 +1,4 @@
+<link type="text/css" rel="stylesheet" href="vendor/dragoncoder/css/<?=$_GET['page']?>.css"/>
 <input type="hidden" name="mes_view" id="mes_view" value="<?=date('m')?>">
 <input type="hidden" name="ano_view" id="ano_view" value="<?=date('Y')?>">
 <div id="calendar">
@@ -53,4 +54,4 @@
         </div>
     </div>
     </div>
-</div>
+</div><br>

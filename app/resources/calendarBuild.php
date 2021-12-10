@@ -74,6 +74,6 @@
                     </div>
                 </div>';
     }
-    $card.='<script type="text/javascript" src="vendor/dragoncoder/js/calendar.js"></script>';
+    $card.='<br><script type="text/javascript" src="vendor/dragoncoder/js/calendar.js"></script>';
     echo json_encode(["month" => getMonthName($mes,$ano) , "card" => $card]);
 ?>

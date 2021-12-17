@@ -8,7 +8,7 @@ $('#search').on('keyup', function(){
     var exists = 0;
     var text = '';
     var table = $('.line-table');
-    if(size>=2){
+    if(size>=1){
         for(var i=0;i<table.length;i++){
             exists = 0;
             for(var j=0;j<table[i].cells.length;j++){
@@ -23,7 +23,6 @@ $('#search').on('keyup', function(){
                     if(!exists)
                         table[i].style.display='none';
                 }
-                //console.log(table[i].cells[j].textContent);
             }
         }
     } else{

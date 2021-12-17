@@ -43,6 +43,11 @@
                         <td>Lollipop</td>
                         <td>$7.00</td>
                     </tr>
+                    <tr class="line-table">
+                        <td>Fabio</td>
+                        <td>Big Sur</td>
+                        <td>$51.00</td>
+                    </tr>
                 </tbody>
             </table>
         </div>

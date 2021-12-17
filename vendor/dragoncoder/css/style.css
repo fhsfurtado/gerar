@@ -37,6 +37,7 @@ nav{
 /* Por classe*/
 .brand-logo{
     margin-left: 21px;
+    cursor:pointer;
 }
 .nav-clickable{
     cursor: pointer;

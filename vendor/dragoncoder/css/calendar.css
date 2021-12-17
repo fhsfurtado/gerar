@@ -95,3 +95,9 @@
         border-top: gray 1px solid;
     }
 }
+#calendario-draw > div{
+    cursor: grab;
+}
+.disabled-color{
+    cursor: not-allowed!important;
+}
